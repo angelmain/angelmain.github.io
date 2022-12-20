@@ -63,6 +63,10 @@
     color: #e0a912;
   }
 
+  a:link {
+    color: #e0a912;
+  }
+
   a:active{
     color: #c99811;
   }
@@ -74,8 +78,6 @@
   a:hover {
       text-decoration: none;
   }
-
-  a:
   
   /* ------------------------------------ */
   h1 {margin-bottom:20px; color: rgb(235, 235, 235);}
