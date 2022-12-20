@@ -21,13 +21,9 @@
       height: 100%;
       font-family: sans-serif;
   }
-
-  a {
-    color: #daa411;
-  }
   
   #modechange {
-    background-color: #c4a20c; /* Green background */
+    background-color: #cf9c10;; /* Green background */
     border: 1px solid #584308; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
@@ -39,7 +35,7 @@
   }
   
   #scriptsoraudios {
-    background-color: #c4a20c; /* Green background */
+    background-color: #cf9c10;; /* Green background */
     border: 1px solid #584308; /* Green border */
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
@@ -64,6 +60,11 @@
       -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
+    color: #e0a912;
+  }
+
+  a:active{
+    color: #c99811;
   }
   
   a:focus {
@@ -73,6 +74,8 @@
   a:hover {
       text-decoration: none;
   }
+
+  a:
   
   /* ------------------------------------ */
   h1 {margin-bottom:20px; color: rgb(235, 235, 235);}
