@@ -60,10 +60,13 @@
       -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     -moz-transition: all 0.4s;
-    color: #e0a912;
   }
 
   a:link {
+    color: #e0a912;
+  }
+
+  a:visited {
     color: #e0a912;
   }
 
@@ -73,14 +76,16 @@
   
   a:focus {
       outline: none !important;
+      color: #e0a912;
   }
   
   a:hover {
       text-decoration: none;
+      color: #e0a912;
   }
   
   /* ------------------------------------ */
-  h1 {margin-bottom:20px; color: rgb(235, 235, 235);}
+  title {margin-bottom:20px; color: rgb(235, 235, 235);}
   h2,h3,h4,h5,h6 {margin: 0px;}
   
   p {margin: 0px;}
