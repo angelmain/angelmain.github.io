@@ -42,7 +42,7 @@
   
   a:focus {
       outline: none !important;
-      color: #c99811;
+      color: #a77e0f;
   }
   
   a:hover {
@@ -51,7 +51,7 @@
   }
   
   /* ------------------------------------ */
-  title {margin-bottom:20px; color: rgb(235, 235, 235);}
+  h1 {margin-bottom:20px; color: rgb(235, 235, 235);}
   h2,h3,h4,h5,h6 {margin: 0px;}
   
   p {margin: 0px;}
