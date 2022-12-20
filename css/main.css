@@ -22,36 +22,6 @@
       font-family: sans-serif;
   }
   
-  #modechange {
-    background-color: #cf9c10;; /* Green background */
-    border: 1px solid #584308; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    margin: 10px;
-    cursor: pointer; /* Pointer/hand icon */
-    width: 150px;
-    height: 60px;
-    text-align: center;
-  }
-  
-  #scriptsoraudios {
-    background-color: #cf9c10;; /* Green background */
-    border: 1px solid #584308; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    margin: 10px;
-    cursor: pointer; /* Pointer/hand icon */
-    width: 150px;
-    height: 60px;
-    text-align: center;
-  }
-  
-  #topbuttons {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  
   
   /* ------------------------------------ */
   a {
@@ -69,14 +39,10 @@
   a:visited {
     color: #e0a912;
   }
-
-  a:active{
-    color: #c99811;
-  }
   
   a:focus {
       outline: none !important;
-      color: #e0a912;
+      color: #c99811;
   }
   
   a:hover {
