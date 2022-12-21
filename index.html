@@ -28,6 +28,50 @@
 <!-- Do not change anything inside the <head></head> tag other than the title. If you do, things will probably explode -->
 
 <body>
+	<script> // Script that creates all of the functional part of the page. Do not modify anything inside this tag unless you really know what you're doing
+		(function (document) {
+			'index.html';
+
+			var mode = localStorage['mode']; // Gets current light/dark setting
+
+			var LightTableFilter = (function (Arr) {
+
+				var _input;
+
+				function _onInputEvent(e) { // A lot of stuff to make the table filter work
+					_input = e.target;
+					var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+					Arr.forEach.call(tables, function (table) {
+						Arr.forEach.call(table.tBodies, function (tbody) {
+							Arr.forEach.call(tbody.rows, _filter);
+						});
+					});
+				}
+
+				function _filter(row) {
+					var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+					row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+				}
+
+				return {
+					init: function () {
+						var inputs = document.getElementsByClassName('light-table-filter');
+						Arr.forEach.call(inputs, function (input) {
+							input.oninput = _onInputEvent;
+						});
+					}
+				};
+			})(Array.prototype);
+
+			document.addEventListener('readystatechange', function () { // Adds table filter
+				if (document.readyState === 'complete') {
+					LightTableFilter.init();
+				}
+			});
+
+		})(document);
+
+	</script>
 	<div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
